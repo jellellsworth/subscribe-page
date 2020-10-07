@@ -103,10 +103,9 @@ table{
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1024px) {
+@media screen and (min-width: 800px) and (max-width: 1024px) {
   .theDiv{
     display: flex;
-    flex-wrap: wrap;
   }
   .fullForm{
     max-width: 250px;
@@ -126,7 +125,7 @@ table{
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (min-width: 451px) and (max-width: 799px) {
   .lifeImg{
     width: 400px;
     height: 300px;
@@ -143,6 +142,27 @@ table{
   }
   .fifteenImage{
     width: 225px;
+  }
+}
+
+/* For Phones starting max width is 450px */
+@media (max-device-width: 450px) {
+  .lifeImg{
+    width: 250px;
+    height: 150px;
+    margin: 5% 40% 2% 40%;
+  }
+  .fullForm{
+    margin: 5% 40% 2% 40%;
+  }
+  .theDiv{
+    display: block;
+  }
+  .signUpImage{
+    width: 75px;
+  }
+  .fifteenImage{
+    width: 175px;
   }
 }
 
@@ -193,7 +213,7 @@ table{
 
 /* Subscribe button */
 .subscribeBTN{
-  padding: 15px 100px;
+  padding: 15px 50px;
   font-weight: 600;
   color: #FFFFFF;
   background-color: #e3000B;
