@@ -40,6 +40,7 @@ table{
 @media (min-width: 1150px) {
   .theDiv{
     display: flex;
+    flex-wrap: nowrap;
   }
   .lifeImg{
     width: 600px;
@@ -69,6 +70,7 @@ table{
 @media (min-width: 1025px) and (max-width: 1149px) {
   .theDiv{
     display: flex;
+    flex-wrap: nowrap;
   }
   .fullForm{
     max-width: 300px;
@@ -101,9 +103,10 @@ table{
   }
 }
 
-@media (min-width: 750px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1024px) {
   .theDiv{
     display: flex;
+    flex-wrap: wrap;
   }
   .fullForm{
     max-width: 250px;
@@ -123,19 +126,17 @@ table{
   }
 }
 
-@media (max-width: 749px) {
+@media screen and (max-width: 749px) {
   .lifeImg{
     width: 400px;
-    display: block;
+    height: 300px;
     margin: 5% 50% 2% 10%;
   }
   .fullForm{
     margin: 5% 25% 2% 20%;
-    display: block;
   }
   .theDiv{
     display: block;
-    position: static;
   }
   .signUpImage{
     width: 75px;
@@ -198,11 +199,21 @@ table{
   background-color: #e3000B;
   border-color: #e3000B;
   border-radius: 10px;
+  font-size: 22px;
 }
 
 /* After clicking subscribe button */
 .thanksSubscribe{
   margin:auto;
   padding:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thankYou{
+  font-size: 128px;
+}
+
+.noDisplay{
   display: none;
 }
