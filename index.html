@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Subscribe</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="page-width theDiv">
+
+    <!-- <table>
+      <tr>
+
+        <td> -->
+
+          <img src="lifestyle.jpg" alt="Person taking glow stick out of Recon kit" class="lifeImg">
+        <!-- </td> -->
+
+        <!-- <td> -->
+          <div class="fullForm" id="ps__subscribe-form">
+
+            <div>
+              <img src="signUP.png" alt="sign up" class="signUPImage">
+              <h2 class="receive">and receive a</h2>
+              <img src="$15.png" alt="$15" class="fifteenImage">
+              <p class="signUpText">Stay up-to-date on upcomimg promotions, new products, and our amazing <strong>Black Friday Deals!</strong></p>
+
+              <form action="https://api.postscript.io/subscribe/form" method="post" onsubmit="document.getElementById('ps__sent-message').style.display = 'block'; document.getElementById('ps__subscribe-form').style.display = 'none';"
+                target="dummyframe">
+                <input id="ps__shop_id" name="shop_id" type="hidden" value="10097">
+                <input id="ps__keyword_id" name="keyword_id" type="hidden" value="27212">
+
+                <div class="phoneInputDiv">
+                  <input id="ps__phone-subscribe" class="phoneInput" name="phone" type="phone" placeholder="Enter your phone number" autofocus>
+                </div>
+
+                <div>
+                  <p class="privacy_policy">
+                    *By subscribing, you agree to receive recurring automated marketing messages at this phone number. Reply STOP to unsubscribe.
+                    Msg & data rates may apply. View our <a class="privacyLink" href="{{shop.privacy_policy.url}}">Privacy Policy</a> and <a class="privacyLink" href="{{shop.terms_of_service.url}}">Terms of Service</a>.
+                  </p>
+
+                </div>
+
+                <div class="subscribeButton">
+                  <input type="submit" value="SUBSCRIBE" class="btn subscribeBTN">
+                </div>
+
+              </form>
+            </div>
+
+            <div class="thanksSubscribe" id="ps__sent-message">
+              <h4>Thanks for subscribing! We'll send you a message shortly.</h4>
+            </div>
+
+          </div>
+
+        <!-- </td>
+      </tr>
+    </table> -->
+
+  </div>
+  <iframe width="0" height="0" border="0" name="dummyframe" id="ps__dummyframe"></iframe>
+
+</body>
+
+</html>
