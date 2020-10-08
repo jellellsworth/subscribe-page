@@ -138,7 +138,8 @@ table{
     display: block;
   }
   .signUpImage{
-    width: 75px;
+    width: 175px;
+    margin-left: 10%;
   }
   .fifteenImage{
     width: 225px;
@@ -159,7 +160,7 @@ table{
     display: block;
   }
   .signUpImage{
-    width: 75px;
+    width: 150px;
   }
   .fifteenImage{
     width: 175px;
